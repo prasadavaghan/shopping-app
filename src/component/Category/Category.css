@@ -1,0 +1,102 @@
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+}
+
+.container-list li {
+    font-size: 18px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.container-list a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-list li:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.cart-button {
+    position: absolute;
+    top: 3%;
+    right: 18%;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    .cart-button {
+        padding: 0;
+        top: 8%;
+        right: 10%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+.container .loading-spinner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.container .spinner {
+    border: 4ps solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
